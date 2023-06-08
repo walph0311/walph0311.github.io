@@ -1,148 +1,151 @@
 body {
-    background: rgba(255, 0, 0);
-    color: rgb(45, 45, 45);
-    padding: 10px;
-    font-family: arial;
+  background: rgba(255, 0, 0);
+  color: rgb(45, 45, 45);
+  padding: 10px;
+  font-family: arial;
 }
 
 #all-contents {
-    max-width: 800px;
-    margin: auto;
+  max-width: 800px;
+  margin: auto;
 }
 
 /* navigation menu */
 nav {
-    background: rgb(0, 0, 255);
-    margin: 0 auto;
-    margin-bottom: 20px;
-    display: flex;
-    padding: 10px;
+  background: rgb(0, 0, 255);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 10px;
 }
 
 h1 {
-    display: flex;
-    align-items: center;
-    color: white;
-    flex: 1;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex: 1;
+  margin: 0;
 }
 
 #nav-ul {
-    list-style-image: none;
+  list-style-image: none;
 }
 
 .nav-li {
-    display: inline-block;
-    padding: 0 10px;
+  display: inline-block;
+  padding: 0 10px;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* main container area beneath menu */
 main {
-    background: rgb(245, 238, 219);
-    display: flex;
+  background: rgb(245, 238, 219);
+  display: flex;
 }
 
 .sidebar {
-    margin-right: 25px;
-    padding: 10px;
+  margin-right: 25px;
+  padding: 10px;
 }
 
 .sidebar-img {
-    width: 200px;
+  width: 200px;
 }
 
 .content {
-    flex: 1;
-    padding: 15px;
+  flex: 1;
+  padding: 15px;
 }
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
-    padding: 8px;
+  border: 4px silver ridge;
+  padding: 8px;
 }
 
 h2,
 h3 {
-    margin: 0px;
+  margin: 0px;
 }
 
 /* portfolio styles */
 .content h1 {
-    color: black;
+  color: rgb(0, 0, 0);
 }
 
 #portfolio {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 #portfolio li {
-    background: #000000;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 #portfolio li:hover {
-    background: #000000;
+  background: #3aa2d22c;
+  opacity: .8;
+  /* background-color: rgba(0, 0, 255, .05); */
 }
 
 #portfolio a {
-    text-decoration: none;
-    color: #454545;
+  text-decoration: none;
+  color: #454545;
 }
- /* responsive web design */
- @media screen and (min-width: 120px) and (max-width: 1080px) {
-    main {
-      height: 100ch;
-      zoom: 1.5;
-      display: grid;
-    }
 
-    h1 {
-      font-size: 44px;
-    }
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 100ch;
+    zoom: 1.5;
+    display: grid;
+  }
 
-    h2 {
-      font-size: 42px;
-    }
+  h1 {
+    font-size: 44px;
+  }
 
-    h3 {
-      font-size: 36px;
-    }
+  h2 {
+    font-size: 42px;
+  }
 
-    #all-contents {
-      height: 100ch;
-      margin: none;
-    }
+  h3 {
+    font-size: 36px;
+  }
 
-    a {
-      font-size: 42px;
-    }
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
 
-    .sidebar {
-      margin-right: 0px;
-      justify-content: center;
-      align-items: center;
-    }
+  a {
+    font-size: 42px;
+  }
 
-    .sidebar-img {
-      width: 100%;
-    }
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
 
-    p,
-    li {
-      font-size: 24px;
-    }
+  .sidebar-img {
+    width: 100%;
+  }
 
-    .content {
-      align-content: center;
-      justify-content: center;
-    }
+  p,
+  li {
+    font-size: 24px;
+  }
+
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
 }
