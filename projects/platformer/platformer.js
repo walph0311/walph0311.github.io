@@ -69,7 +69,7 @@ $(function () {
     createPlatform(350, 300, 50, 50)
     createPlatform(750, 250, 100, 10)
     createPlatform(750, 400, 100, 10)
-
+    
 
     // TODO 3
     // Create cannons
@@ -84,7 +84,7 @@ $(function () {
     createCannon('bottom', 800, 5000)
     createCannon('bottom', 700, 5000)
     createCannon('bottom', 900, 5000)
-    
+    createCannon('right', 300, 2500, 100, 100)
 
 
     /////////////////////////////////////////////////
