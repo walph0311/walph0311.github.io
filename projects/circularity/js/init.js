@@ -32,7 +32,11 @@ var init = function (window) {
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-
+        physikz.addRandomVelocity(circle, canvas, 10, 10);
+        physikz.addRandomVelocity(circle, canvas, 10, 10);
+        physikz.addRandomVelocity(circle, canvas, 10, 10);
+        physikz.addRandomVelocity(circle, canvas, 10, 10);
+        physikz.addRandomVelocity(circle, canvas, 10, 10);
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -45,8 +49,12 @@ var init = function (window) {
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
-
+            physikz.updatePosition()
+            physikz.updatePosition()
+            physikz.updatePosition()
+            physikz.updatePosition()
+            physikz.updatePosition()
+            game.checkCirclePosition()
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
 
 
