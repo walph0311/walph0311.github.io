@@ -84,23 +84,22 @@ function checkForNewDirection(event) {
   BONUS: Only allow direction changes to take place if the new direction is
   perpendicular to the current direction
   */
-
+  
   if (activeKey === KEY.LEFT) {
     snake.head.direction = "left";
-    console.log(snake.head.direction)
   }
-  /*
   else if (activeKey === KEY.RIGHT){
-    snake.head.direction = "right";
+    snake.head.direction = "left"
   }
-  else if (activeKey === KEY.UP){
-    snake.head.direction = "up";
-  }
-  else if (activeKey === KEY.DOWN){
+  else if (activeKEY === KEY.DOWN) {
     snake.head.direction = "down"
   }
+  else if (activeKEY === KEY.UP) {
+    snake.head.direction = "up"
+  }
+  
   // FILL IN THE REST
-  */
+  
    console.log(snake.head.direction);     // uncomment me!
 }
 
