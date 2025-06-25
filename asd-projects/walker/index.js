@@ -87,10 +87,10 @@ function runProgram(){
     if (walker.positionX > $("#board").width()-walker.width){
       walker.positionX = $("#board").width() - walker.width
     }
-    if (walker.positionY > $("#board").height()){
+    if (walker.positionY < 0){
       walker.positionY = 0
     }
-    if (walker.positionY > $("#board").height()){
+    if (walker.positionY > $("#board").height() - walker.height){
       walker.positionY = $("#board").height() - walker.height
     }
   }
