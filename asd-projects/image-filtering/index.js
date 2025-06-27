@@ -4,6 +4,7 @@ $(document).ready(function () {
   render($("#display"), image);
   $("#apply").on("click", applyAndRender);
   $("#reset").on("click", resetAndRender);
+  applyFilter(decreaseBlue);
 });
 
 /////////////////////////////////////////////////////////
@@ -32,18 +33,49 @@ function applyAndRender() {
 /////////////////////////////////////////////////////////
 
 // TODO 1, 2, 3 & 5: Create the applyFilter function here
-
+function applyFilter(filterFunction){
+  for (var row = 0; row < image.length; row++ ){
+    for (var col = 0; col < image[row].length; col ++){
+      var pixel = image[row][col];
+      var pixelArray = rgbStringToArray(pixel);
+      // This is where Ill modify the color values later
+      filterFunction(pixelArray);
+      var updatedPixel = rgbArrayToString(pixelArray);
+      image[row][col] = updatedPixel
+      
+    }
+  }
+}
 
 // TODO 9 Create the applyFilterNoBackground function
 
 
 // TODO 6: Create the keepInBounds function
-
+function keepInBounds(num){
+  if (num < 0){
+    return 0
+  }
+  else if (num > 255){
+    return 255
+  }
+  else{
+    return num
+  }
+}
 
 // TODO 4: Create reddify filter function
-
-
+function reddify(array){
+  const RED = 200
+  array[0] = RED
+}
+var testArray = [100, 100, 100];
+reddify(testArray);
+console.log(testArray); // Should show [200, 100, 100]
 // TODO 7 & 8: Create more filter functions
-
+function decreaseBlue(array){
+  const BLUE = 200;
+  BLUE -= 50;
+  array[1] = keepInBounds(BLUE);
+}
 
 // CHALLENGE code goes below here
