@@ -4,7 +4,6 @@ $(document).ready(function () {
   render($("#display"), image);
   $("#apply").on("click", applyAndRender);
   $("#reset").on("click", resetAndRender);
-  applyFilter(decreaseBlue);
 });
 
 /////////////////////////////////////////////////////////
@@ -21,6 +20,7 @@ function resetAndRender() {
 // all of your apply functions
 function applyAndRender() {
   // Multiple TODOs: Call your apply function(s) here
+  applyFilter(reddify);
 
   
 
@@ -65,17 +65,15 @@ function keepInBounds(num){
 
 // TODO 4: Create reddify filter function
 function reddify(array){
-  const RED = 200
-  array[0] = RED
+  array[RED] = RED
 }
 var testArray = [100, 100, 100];
 reddify(testArray);
 console.log(testArray); // Should show [200, 100, 100]
 // TODO 7 & 8: Create more filter functions
 function decreaseBlue(array){
-  const BLUE = 200;
   BLUE -= 50;
-  array[1] = keepInBounds(BLUE);
+  array[BLUE] = keepInBounds(BLUE);
 }
 
 // CHALLENGE code goes below here
