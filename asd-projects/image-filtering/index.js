@@ -23,7 +23,7 @@ function applyAndRender() {
   applyFilter(reddify);
   applyFilterNoBackground(decreaseBlue);
   applyFilter(increaseGreenByBlue);
-  applyFilterNoBackground(reddify);
+  //applyFilterNoBackground(reddify);
   
   
 
